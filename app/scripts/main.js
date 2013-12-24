@@ -1,7 +1,12 @@
 console.log('\'Allo \'Allo!');
 $(function(argument) {
 
- function(argument) {
+	$('#btnGenerate').on('click', function() {
+		var val = $('#inputFont').val();
+
+		var str = write(val);
+		$('#text').val(str);
+	});
 
 
 	var aFont = ["...###...", "..##.##..", ".##...##.", "##.....##", "#########", "##.....##", "##.....##"];
@@ -65,25 +70,31 @@ $(function(argument) {
 	};
 
 	function write(str) {
-		var strLength = str.length;
-		var result = "";
+		var strLength = str.length,
+			result = "",
+			head = "/*\n",
+			end = '*/\n',
+			title;
+		result += head;
 		for (var i = 0; i < 7; i++) {
 			for (var j = 0; j < strLength; j++) {
 
 				var alphabet = dic[str[j]];
 				result += alphabet[i] + space;
-				if (j == strLength-1) {
+				if (j == strLength - 1) {
 					result += "\n";
 				}
 
 			}
 		}
+
+		result += end;
+		title = "/*****************************{title}*****************************/"
+		title = title.replace("{title}", str);
+		result += title;
 		return result;
 	}
 
-	return write;
-
-}
 
 
 });
