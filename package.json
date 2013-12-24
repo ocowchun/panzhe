@@ -31,7 +31,11 @@
     "time-grunt": "~0.2.0",
     "jshint-stylish": "~0.1.3"
   },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
   "engines": {
-    "node": ">=0.8.0"
+    "node": "0.10.x",
+    "npm": "1.2.x"
   }
 }
