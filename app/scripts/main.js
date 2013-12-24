@@ -1,62 +1,89 @@
-require.config({
-    paths: {
-        jquery: '../bower_components/jquery/jquery',
-        bootstrapAffix: '../bower_components/sass-bootstrap/js/affix',
-        bootstrapAlert: '../bower_components/sass-bootstrap/js/alert',
-        bootstrapButton: '../bower_components/sass-bootstrap/js/button',
-        bootstrapCarousel: '../bower_components/sass-bootstrap/js/carousel',
-        bootstrapCollapse: '../bower_components/sass-bootstrap/js/collapse',
-        bootstrapDropdown: '../bower_components/sass-bootstrap/js/dropdown',
-        bootstrapModal: '../bower_components/sass-bootstrap/js/modal',
-        bootstrapPopover: '../bower_components/sass-bootstrap/js/popover',
-        bootstrapScrollspy: '../bower_components/sass-bootstrap/js/scrollspy',
-        bootstrapTab: '../bower_components/sass-bootstrap/js/tab',
-        bootstrapTooltip: '../bower_components/sass-bootstrap/js/tooltip',
-        bootstrapTransition: '../bower_components/sass-bootstrap/js/transition'
-    },
-    shim: {
-        bootstrapAffix: {
-            deps: ['jquery']
-        },
-        bootstrapAlert: {
-            deps: ['jquery', 'bootstrapTransition']
-        },
-        bootstrapButton: {
-            deps: ['jquery']
-        },
-        bootstrapCarousel: {
-            deps: ['jquery', 'bootstrapTransition']
-        },
-        bootstrapCollapse: {
-            deps: ['jquery', 'bootstrapTransition']
-        },
-        bootstrapDropdown: {
-            deps: ['jquery']
-        },
-        bootstrapModal:{
-            deps: ['jquery', 'bootstrapTransition']
-        },
-        bootstrapPopover: {
-            deps: ['jquery', 'bootstrapTooltip']
-        },
-        bootstrapScrollspy: {
-            deps: ['jquery']
-        },
-        bootstrapTab: {
-            deps: ['jquery', 'bootstrapTransition']
-        },
-        bootstrapTooltip: {
-            deps: ['jquery', 'bootstrapTransition']
-        },
-        bootstrapTransition: {
-            deps: ['jquery']
-        }
-    }
-});
+console.log('\'Allo \'Allo!');
+$(function(argument) {
 
-require(['app', 'jquery'], function (app, $) {
-    'use strict';
-    // use app here
-    console.log(app);
-    console.log('Running jQuery %s', $().jquery);
+ function(argument) {
+
+
+	var aFont = ["...###...", "..##.##..", ".##...##.", "##.....##", "#########", "##.....##", "##.....##"];
+	var bFont = ["#######..", "##.....#.", "##......#", "########.", "##.....#.", "##......#", "########."];
+	var cFont = ["#########", "##.....##", "##.......", "##.......", "##.......", "##.....##", "#########"];
+	var dFont = ["#######..", "##.....##", "##......#", "##......#", "##......#", "##.....##", "#######.."];
+	var eFont = ["#########", "##.......", "##.......", "#########", "##.......", "##.......", "#########"];
+	var fFont = ["#########", "##.......", "##.......", "#########", "##.......", "##.......", "##......."];
+	var gFont = [".########", "##.....##", "##.......", "##.......", "##..#####", "##.....##", ".########"];
+	var hFont = ["##.....##", "##.....##", "##.....##", "#########",
+		"##.....##", "##.....##", "##.....##"
+	];
+	var iFont = ["#########", "#########", "...###...", "...###...", "...###...", "#########", "#########"];
+	var jFont = ["#########", "#########", ".....##..", ".....##..", ".....##..", ".##..##..", ".######.."];
+	var kFont = ["##....##.", "##...##..", "##..##...", "#####....", "##..##...", "##...##..", "##....##."];
+	var lFont = ["##.......", "##.......", "##.......", "##.......", "##.......", "##.......", "#########"];
+	var mFont = ["###...###", "##.#.#.##", "##..#..##", "##..#..##", "##..#..##", "##..#..##", "##..#..##"];
+	var nFont = ["###....##", "####...##", "##.##..##", "##..##.##", "##...####", "##....###", "##.....##"];
+	var oFont = ["#########", "##.....##", "##.....##", "##.....##", "##.....##", "##.....##", "#########"];
+	var pFont = ["########.", "##.....##", "##.....##", "########.", "##.......", "##.......", "##......."];
+	var qFont = ["..####...", "##....###", "#......##", "#......##", "#..##..##", "##...##..", "..###..##"];
+	var rFont = ["########.", "##......#", "##......#", "########.", "##...##..", "##....##.", "##.....##"];
+	var sFont = [".#######.", "##.....##", "##.......", ".#######.", ".......##", "##.....##", ".#######."];
+	var tFont = ["#########", "#########", "...###...", "...###...", "...###...", "...###...", "...###..."];
+	var uFont = ["##.....##", "##.....##", "##.....##", "##.....##", "##.....##", ".##...##.", "..#####.."];
+	var vFont = ["##.....##", "##.....##", "##.....##", "##.....##", ".##...##.", "..##.##..", "....#...."];
+	var wFont = ["##..#..##", "##..#..##", "##..#..##", "##..#..##", "##..#..##", "##.#.#.##", "###...###"];
+	var xFont = ["##.....##", ".##...##.", "..##.##..", "....##...", "..##.##..", ".##...##.", "##.....##"];
+	var yFont = ["##.....##", "##.....##", "##.....##", "#########", "...###...", "...###...", "...###..."];
+	var zFont = ["#########", "......##.", ".....##..", "....##...", "..##.....", ".##......", "#########"];
+	var space = "...";
+	var dic = {
+		a: aFont,
+		b: bFont,
+		c: cFont,
+		d: dFont,
+		e: eFont,
+		f: fFont,
+		g: gFont,
+		h: hFont,
+		i: iFont,
+		j: jFont,
+		k: kFont,
+		l: lFont,
+		m: mFont,
+		n: nFont,
+		o: oFont,
+		p: pFont,
+		q: qFont,
+		r: rFont,
+		s: sFont,
+		t: tFont,
+		u: uFont,
+		v: vFont,
+		w: wFont,
+		x: xFont,
+		y: yFont,
+		z: zFont,
+
+		space: space
+	};
+
+	function write(str) {
+		var strLength = str.length;
+		var result = "";
+		for (var i = 0; i < 7; i++) {
+			for (var j = 0; j < strLength; j++) {
+
+				var alphabet = dic[str[j]];
+				result += alphabet[i] + space;
+				if (j == strLength-1) {
+					result += "\n";
+				}
+
+			}
+		}
+		return result;
+	}
+
+	return write;
+
+}
+
+
 });
