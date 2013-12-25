@@ -1,6 +1,9 @@
 'use strict';
 $(function() {
 
+	$('form').submit(function() {
+		return false;
+	});
 
 	$('#btnGenerate').on('click', function() {
 		var val = $('#inputFont').val();
@@ -78,7 +81,7 @@ $(function() {
 			title;
 		result += head;
 		for (var i = 0; i < 7; i++) {
-			result+=' * '
+			result += ' * ';
 			for (var j = 0; j < strLength; j++) {
 
 				var alphabet = dic[str[j]];
