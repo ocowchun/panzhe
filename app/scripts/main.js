@@ -84,7 +84,7 @@ $(function() {
 			result += ' * ';
 			for (var j = 0; j < strLength; j++) {
 
-				var alphabet = dic[str[j]];
+				var alphabet = dic[str[j].toLowerCase()];
 				result += alphabet[i] + space;
 				if (j === strLength - 1) {
 					result += '\n';
