@@ -13,29 +13,29 @@
             <html class="no-js">
             <!--<![endif]-->
             <head>
-                <meta charset="utf-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <title>Big Type Generator</title>
-                <meta name="description" content="big type generator-讓你的js更容易閱讀">
-                <meta name="viewport" content="width=device-width">
-                <meta property="og:title" content="big type generator">
-                <meta property="og:description" content="big type generator-讓你的js更容易閱讀">
-                <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+              <meta charset="utf-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <title>Big Type Generator</title>
+              <meta name="description" content="big type generator-讓你的js更容易閱讀">
+              <meta name="viewport" content="width=device-width">
+              <meta property="og:title" content="big type generator">
+              <meta property="og:description" content="big type generator-讓你的js更容易閱讀">
+              <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-                <!-- build:css(.tmp) styles/main.css -->
-                <link rel="stylesheet" href="styles/main.css">
-                <!-- endbuild -->
-                <script src="bower_components/modernizr/modernizr.js"></script>
+              <!-- build:css(.tmp) styles/main.css -->
+              <link rel="stylesheet" href="styles/main.css">
+              <!-- endbuild -->
+              <script src="bower_components/modernizr/modernizr.js"></script>
 
             </head>
             <body>
-                <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=513012355461168";
-                  fjs.parentNode.insertBefore(js, fjs);
+              <div id="fb-root"></div>
+              <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=513012355461168";
+                fjs.parentNode.insertBefore(js, fjs);
               }(document, 'script', 'facebook-jssdk'));</script>
                 <!--[if lt IE 10]>
                 <p class="browsehappy">
@@ -47,78 +47,82 @@
                 <![endif]-->
                 
                 <div class="wrapper">
-                    <div class="container">
-                        <h1 class="title"><span class="glyphicon glyphicon-stats"></span> 大字母產生器</h1>
-                        <div class="fb-like" data-href="http://bigtype.herokuapp.com/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+                  <div class="container">
+                    <h1 class="title"><span class="glyphicon glyphicon-stats"></span> 大字母產生器</h1>
+                    <div class="fb-like" data-href="http://bigtype.herokuapp.com/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 
-                        <div class="main-content well">
+                    <div class="main-content well">
 
-                            <p class="pic">
-                                <img src="images/shot.png" alt="Responsive image" alt="">
-                            </p>
-                            <div class="desc">
-                                <h3>Generate big Type for your js</h3>
-                                <p>1.輸入字串(建議八個英文字母以內)</p>
-                                <p>2.點擊generate</p>
-                                <p>3.全選複製下方文字區塊至你的文字編輯器</p>
-                            </div>
-                            <form class="form-horizontal pz-form">
-                                <div class="form-group">
+                      <p class="pic">
+                        <img src="images/shot.png" alt="Responsive image" alt="">
+                      </p>
+                      <div class="desc">
+                        <h3>Generate big Type for your js</h3>
+                        <p>1.輸入字串(建議八個英文字母以內)</p>
+                        <p>2.點擊generate</p>
+                        <p>3.在你的編輯器貼上，又大又漂亮的註解完成了！</p>
+                      </div>
+                      <form class="form-horizontal pz-form">
+                        <div class="form-group">
 
-                                    <div class="col-sm-10 pdr0">
-                                      <input type="text" class="form-control input" id="inputFont">
-                                  </div>
-                                  <div class="col-sm-2">
-                                    <button id="btnGenerate" class="btn btn-lg btn-success">generate</button>
-                                </div>
-                            </div>
+                          <div class="col-sm-10 pdr0">
+                            <input type="text" class="form-control input" id="inputFont">
+                          </div>
+                          <div class="col-sm-2">
+                            <button id="btnGenerate" data-clipboard-text="Copy Me!" class="btn btn-lg btn-success">generate</button>
+                          </div>
+                        </div>
 
-                            <textarea name="" id="text" cols="30" rows="10"></textarea>
-                            <p class="ps"><h3>真的很大很漂亮</h3><span>有了大字母產生器，你也可以一目瞭然的掌握程式區塊的分類!!</span></p>
+                        <textarea name="" id="text" cols="30" rows="10"></textarea>
+                        <p class="ps"><h3>真的很大很漂亮</h3><span>有了大字母產生器，你也可以一目瞭然的掌握程式區塊的分類!!</span></p>
 
-                            <div class="alert alert-danger">
-                                <p>目前僅支援英文字母</p>
-                            </div>
-
-                        </form>
+                        <div class="alert alert-danger">
+                          <p>目前僅支援英文字母</p>
+                        </div>
+                        <div class="alert alert-success">
+                          <p>2013.12.30更新:支援點擊既自動複製</p>
+                        </div>
+                      </form>
 
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="pull-left pz-footer">
-               <p>
+                <div class="pull-left pz-footer">
+                 <p>
                    Designed and built with all the love in the world by
-                    <a href="mailto:ocowchun@gmail.com" >ocowchun</a> 
-                    and <a href="https://www.facebook.com/profile.php?id=1496471069">PangTzu Chen</a>.
-               </p>   
+                   <a href="mailto:ocowchun@gmail.com" >ocowchun</a> 
+                   and <a href="https://www.facebook.com/profile.php?id=1496471069">PangTzu Chen</a>.
+                 </p>   
 
 
 
 
-           </div>
+               </div>
 
 
 
-           <!-- build:js scripts/vendor.js -->
-           <!-- bower:js -->
-           <script src="bower_components/jquery/jquery.js"></script>
-           <!-- endbower -->
-           <!-- endbuild -->
+               <!-- build:js scripts/vendor.js -->
+               <!-- bower:js -->
+               <script src="bower_components/jquery/jquery.js"></script>
+               <script src="bower_components/zeroclipboard/zeroclipboard.js"></script>
 
-           <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-           <script>
-           (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-           e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-           e.src='//www.google-analytics.com/analytics.js';
-           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-           ga('create','UA-46703609-1');ga('send','pageview');
-           </script>
+               <!-- endbower -->
+               <!-- endbuild -->
 
-           <!-- build:js scripts/main.js -->
+               <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+               <script>
+               (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+               e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+               e.src='//www.google-analytics.com/analytics.js';
+               r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+               ga('create','UA-46703609-1');ga('send','pageview');
+               </script>
 
-           <script src="scripts/main.js"></script>
-           <!-- endbuild -->
+               <!-- build:js scripts/main.js -->
 
-       </body>
-       </html>
+               <script src="scripts/main.js"></script>
+               <!-- endbuild -->
+
+             </body>
+             </html>

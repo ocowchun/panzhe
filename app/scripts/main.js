@@ -5,11 +5,27 @@ $(function() {
 		return false;
 	});
 
-	$('#btnGenerate').on('click', function() {
+	function generateType() {
 		var val = $('#inputFont').val();
-
 		var str = write(val);
 		$('#text').val(str);
+		return str;
+	}
+
+	var clip = new ZeroClipboard(document.getElementById('btnGenerate'), {
+		moviePath: '/bower_components/zeroclipboard/ZeroClipboard.swf'
+	});
+
+	clip.on('load', function(client) {
+		// alert( 'movie is loaded' );
+		client.on('dataRequested', function() {
+			var type = generateType();
+			// $('#btnGenerate').attr("data-clipboard-text", type);
+			clip.setText(type);
+		});
+		client.on('complete', function(client, args) {
+			// `this` is the element that was clicked
+		});
 	});
 
 
